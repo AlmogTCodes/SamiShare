@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational Resource Sharing Platform - Partners Page">
+    <title>SamiShare - Our Partners</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/partners.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">SamiShare</div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="partners.html" class="active">Partners</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="partners-intro">
+            <h1>Our Partners</h1>
+            <p>Collaborating with leading institutions to provide quality educational resources</p>
+        </section>
+
+        <section class="partner-section educational">
+            <h2>Educational Institutions</h2>
+            <div class="partner-grid">
+                <article class="partner-card">
+                    <img src="../assets/Partners-images/people.jpg" alt="University Partner" loading="lazy">
+                    <h3>University of Excellence</h3>
+                    <span class="partner-type">Premium Partner</span>
+                    <p>Leading research institution providing verified academic content</p>
+                    <a href="#" class="partner-link">Learn More</a>
+                </article>
+                <!-- Add more partner cards as needed -->
+            </div>
+        </section>
+
+        <section class="partner-section publishers">
+            <h2>Academic Publishers</h2>
+            <div class="partner-grid">
+                <article class="partner-card">
+                    <img src="../assets/Partners-images/people.jpg" alt="Publisher Partner" loading="lazy">
+                    <h3>Academic Press</h3>
+                    <span class="partner-type">Content Provider</span>
+                    <p>Offering premium educational materials and textbooks</p>
+                    <a href="#" class="partner-link">Learn More</a>
+                </article>
+                <!-- Add more publisher cards as needed -->
+            </div>
+        </section>
+
+        <section class="partner-section tech">
+            <h2>Technology Partners</h2>
+            <div class="partner-grid">
+                <article class="partner-card">
+                    <img src="../assets/Partners-images/people.jpg"  alt="Tech Partner" loading="lazy">
+                    <h3>EduTech Solutions</h3>
+                    <span class="partner-type">Technology Provider</span>
+                    <p>Powering our learning management system</p>
+                    <a href="#" class="partner-link">Learn More</a>
+                </article>
+                <!-- Add more tech partner cards as needed -->
+            </div>
+        </section>
+
+        <section class="become-partner">
+            <h2>Become a Partner</h2>
+            <div class="partner-requirements">
+                <h3>Partnership Requirements</h3>
+                <ul>
+                    <li>Demonstrated expertise in education</li>
+                    <li>Commitment to quality content</li>
+                    <li>Alignment with our mission</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Same footer as index.html -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <address>
+                    <p>Email: contact@samishare.com</p>
+                    <p>Tel: (123) 456-7890</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SamiShare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            nav.classList.toggle('active');
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+    </script>
+</body>
+</html>
